@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="views/css/styles.css">
 </head>
+
 <body>
-    
+
+    <!-- pagina de cadastro de post, primeira a incluirmos logica -->
     <?php include "views/includes/header.php"; ?>
     <main class="board">
         <h1> Cadastro de novo Post </h1>
-        <form >
+        <form action="/DH_Fake_instagram/cadastrar-post" method="POST" enctype="multipart/form-data"> 
+        <!-- action é para onde vai mandar as informações, que criei no PostController.php -->
             <div class="form-group">
                 <label for="exampleFormControlFile1">Example file input</label>
                 <input type="file" class="form-control-file" name="img" id="exampleFormControlFile1">
@@ -26,6 +29,8 @@
         </form>
 
     </main>
+
+<!-- links de javascript -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

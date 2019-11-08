@@ -1,0 +1,12 @@
+# este arquivo serve para informar o servidor que tem trabalho para ele, que sera executado conforme codigo 
+# abaixo. Este codigo eh fixo, guardar e usar sempre ele.
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Página de post
+  RewriteRule ^([a-z0-9-]+)/?$ index.php?$1 [NC,L]
+</IfModule>
+
+
+

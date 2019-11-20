@@ -13,12 +13,22 @@
     
     <?php include "views/includes/header.php"; ?>
     <main class="board">
+    <!-- codigo Vinicius -->
+    <?php foreach($posts as $post): ?>
+    <!-- fim -->
         <div class="card mt-5">
             <img id="cardimg" src="views/img/teste.png" alt="Card image cap">
             <div class="card-body">
-                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet rerum modi, fuga tempora officiis nam nostrum aut fugiat vitae, dolore illo itaque porro dignissimos sapiente quidem rem excepturi perferendis distinctio.</p>
+                <p class="card-text">
+                    <!-- codigo Vinicius -->
+                    <?php echo $post->descricao; ?>
+                    <!-- fim -->
+                    </p>
             </div>
         </div>
+        <!-- codigo Vinicius -->
+    <?php endforeach; ?>
+        <!-- fim -->
         <a class="float-button" href="/instagran/formulario-post">&#10010;</a>
     </main>
     

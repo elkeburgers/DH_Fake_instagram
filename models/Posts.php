@@ -15,4 +15,12 @@ class Post extends Conexao {
         return $query->execute([$imagem, $descricao]);
         // incluiu um return para retornar o dado para o controller. Essa classe só registra no banco, nao eh funcao dele encaminhar o usuario de volta para a pagina de posts, eh do controller (rota).
     }
+
+    // funcao inclusao conforme codigo o Vinicius - 20/11/2019
+    public function listarPosts(){
+        $db = parent::criarConexao();
+        $query = $db->query('SELECT * FROM posts ORDER BY id DESC');
+        $resultado = $query->fetchAll(PDO::FETCH_OBJ);
+        return $resultado;
+    }
 }

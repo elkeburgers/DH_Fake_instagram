@@ -8,9 +8,7 @@ class PostController{
         switch ($rotas) {
             case 'posts':
                 // posts tem que ser igual ao citado no case do index.php.
-                $this->listarPosts();
-                // $this->viewPosts();
-                //viewPosts substituido por listarPosts - codigo do Vinicius 20/11/2019
+                $this->viewPosts();
                 //metodo para usuario ver a pagina dos posts.
             break;
             
@@ -31,7 +29,10 @@ class PostController{
     private function viewFormularioPost(){
         include "views/newPost.php";
     }
-    private function viewPosts(){
+
+    // - alteracao para verificar se corrige problema no codigo
+    private function viewPosts(){ 
+    // private function listarPosts(){
         include "views/posts.php";
     }
 

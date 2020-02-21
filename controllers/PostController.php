@@ -20,6 +20,7 @@ class PostController{
             case "cadastrar-post":
                 $this->cadastroPost();
             break;
+            
         }
     }
 

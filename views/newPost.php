@@ -13,6 +13,7 @@
 
     <!-- pagina de cadastro de post, primeira a incluirmos logica -->
     <?php include "views/includes/header.php"; ?>
+    
     <main class="board">
         <h1> Cadastro de novo Post </h1>
         <form action="/DH_Fake_instagram/cadastrar-post" method="POST" enctype="multipart/form-data"> 
